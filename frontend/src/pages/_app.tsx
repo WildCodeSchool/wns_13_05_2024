@@ -6,5 +6,4 @@ function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
 
-// Disabling SSR
 export default dynamic(() => Promise.resolve(App), { ssr: false });
