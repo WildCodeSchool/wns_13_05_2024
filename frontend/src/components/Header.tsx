@@ -1,6 +1,5 @@
 import { useQuery, gql } from '@apollo/client';
 import Link from 'next/link';
-import Countryard from '../components/CountryCard';
 import { Country } from '../types/countryType';
 import CountryCard from '../components/CountryCard';
 

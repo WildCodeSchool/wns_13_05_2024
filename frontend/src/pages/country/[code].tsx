@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useQuery, gql } from '@apollo/client';
-import CardCountry from '../../components/CountryCard';
+import CountryCard from '../../components/CountryCard';
 
 
 const GET_COUNTRY = gql`
@@ -35,7 +35,7 @@ return (
             <h1>Checkpoint Country</h1>
         </header>
         <main>
-            <CardCountry country={country} continent={{
+            <CountryCard country={country} continent={{
                 id: 0,
                 name: ''
             }}/>
